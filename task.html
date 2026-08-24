@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sentinel - Tasks</title>
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="brand">
+                <span class="brand-dot"></span>
+                Sentinal
+            </div>
+            <div class="nav-links">
+                <a href="task.html" class="nav-link active">Tasks</a>
+                <a href="load.html" class="nav-link">JSON</a>
+
+            </div>
+        </nav>
+        <main class="container">
+            <section class="page-header">
+                <div>
+                    <p class="eyebrow">DEADLINE CONTROL</p>
+                    <h1>Your Tasks</h1>
+                    <p class="subtitle">
+                        Stay ahead of every deadline.
+                    </p>
+                </div>
+                <div class="task-counter">
+                    <span id="taskCount">0</span>
+                    <span>tasks</span>
+                </div>
+            </section>
+            <section class="add-task-card">
+                <div class="input-group">
+                    <label for="taskInput">Task</label>
+                    <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What needs to be done?"
+                    autocomplete="off" />
+
+
+                </div>
+                <div class="input-group">
+                    <label for="deadlineInput">Deadline</label>
+                    <input
+                    type="datatime-local"
+                    id="deadlineInput" />
+
+                </div>
+                <button id="addTaskButton" class="add-button" type="button">
+                    Add Task
+                </button>
+            </section>
+            <section class="task-section">
+                <div class="section-header">
+                    <h2>Tasks</h2>
+                    <button 
+                    id="clearCompletedButton"
+                    class="text-button"
+                    type="button" 
+                    >
+                 Clear completed
+                </button>
+                </div>
+                <div id="taskList" class="task-list">
+                    <div id="emptyState" class="empty-state">
+                        <div class="empty-icon">✓</div>
+                        <h3>No tasks yet</h3>
+                        <p>
+                            Add a task to start tracking your deadlines.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
