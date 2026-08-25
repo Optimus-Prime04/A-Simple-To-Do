@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html,
@@ -10,24 +11,18 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #151515;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    color:#151515;
 }
 
-/* ================================
-   NAVBAR
-================================ */
-
 .navbar {
-    height: 72px;
-    padding: 0 50px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    background: #ffffff;
+    height:72px;
+    padding:0 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#ffffff;
     border-bottom: 1px solid #dedede;
 }
 
@@ -35,7 +30,6 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -66,19 +60,11 @@ body {
     color: #111;
 }
 
-/* ================================
-   MAIN CONTAINER
-================================ */
-
 .container {
     width: min(1100px, calc(100% - 40px));
     margin: 0 auto;
     padding: 70px 0;
 }
-
-/* ================================
-   HEADER
-================================ */
 
 .page-header {
     display: flex;
@@ -90,7 +76,6 @@ body {
 
 .eyebrow {
     margin-bottom: 12px;
-
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 4px;
@@ -113,7 +98,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
     color: #888;
     font-size: 13px;
 }
@@ -124,17 +108,12 @@ body {
     font-weight: 700;
 }
 
-/* ================================
-   ADD TASK
-================================ */
 
 .add-task-card {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     gap: 18px;
-
     padding: 24px;
-
     background: #fff;
     border: 1px solid #dedede;
     border-radius: 8px;
@@ -158,18 +137,13 @@ body {
 .input-group input {
     width: 100%;
     height: 48px;
-
     padding: 0 14px;
-
     border: 1px solid #d5d5d5;
     border-radius: 5px;
-
     background: #fafafa;
     color: #151515;
-
     font-family: inherit;
     font-size: 14px;
-
     outline: none;
 
     transition:
@@ -187,15 +161,11 @@ body {
 .secondary-button {
     border: none;
     border-radius: 5px;
-
     padding: 0 24px;
-
     font-family: inherit;
     font-size: 13px;
     font-weight: 700;
-
     cursor: pointer;
-
     transition:
         transform 0.2s ease,
         background 0.2s ease;
@@ -212,94 +182,387 @@ body {
     background: #333;
     transform: translateY(-2px);
 }
-.tasks-section{
+
+
+.tasks-section {
     margin-top: 55px;
 }
-.section-header{
+
+.section-header {
     display: flex;
-    align-items:center;
-    justify-content:space-between;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 18px;
 }
-.section-header h2{
+
+.section-header h2 {
     font-size: 20px;
 }
-.text-button{
-    border:none;
-    background:none;
-    color:#777;
-    font-family:inherit;
-    font-size:13px;
-    cursor:pointer;
-    transition:color 0.2s ease;
-}
-.text-button:hover{
-    color:#111;
 
+.text-button {
+    border: none;
+    background: none;
+    color: #777;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
-.tasklist{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+
+.text-button:hover {
+    color: #111;
 }
-.task-item{
-    display:flex;
-    align-items:center;
-    gap:18px;
-    padding:20px 22px;
-    background:#fff;
-    border:1px soild #dedede;
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 22px;
+    background: #fff;
+    border: 1px solid #dedede;
     border-radius: 7px;
     transition:
-       transform 0.2s ease;
-       opacity 0.3s ease,
-       background 0.2s ease;
+        transform 0.2s ease,
+        opacity 0.3s ease,
+        background 0.2s ease;
 }
-.task-item:hover{
-    transform: translateY(-1px);
 
+.task-item:hover {
+    transform: translateY(-1px);
 }
-.task-checkbox{
-    width:20px;
-    height:20px;
-    flex-shrink:0;
-    appearance:none;
-    border:1px soild #999;
-    border-radius:50%;
-    background:#fff;
+
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    appearance: none;
+    border: 1px solid #999;
+    border-radius: 50%;
+    background: #fff;
     cursor: pointer;
     transition:
-      background 0.2s ease,
-      border-color 0.2s ease;
+        background 0.2s ease,
+        border-color 0.2s ease;
 }
-.task-checkbox:checked{
-    background: #151515;
-    border-color:#151515;
 
+.task-checkbox:checked {
+    background: #151515;
+    border-color: #151515;
 }
-.task-content{
+
+.task-content {
     min-width: 0;
     flex: 1;
 }
-.task-title{
-    position:relative;
+
+.task-title {
+    position: relative;
     display: inline-block;
-    font-size:15px;
-    font-weight:600;
-    line-height:1.4;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
 }
-.task-title::after{
-    content:"";
+
+.task-title::after {
+    content: "";
     position: absolute;
-    left:0;
-    top:50%;
-    width:100%;
-    height:2px;
-    background:currentColor;
-    transform:scaleX(0);
-    transform-orgin:left;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
     transition: transform 0.35s ease;
 }
+
 .task-item.completed .task-title::after {
-    transform
+    transform: scaleX(1);
+}
+
+.task-item.completed {
+    opacity: 0.55;
+}
+
+.task-deadline {
+    margin-top: 5px;
+
+    font-size: 12px;
+    color: #999;
+}
+
+.task-countdown {
+    min-width: 105px;
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.task-countdown.overdue {
+    color: #777;
+}
+
+.delete-task {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    color: #999;
+    font-size: 18px;
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.delete-task:hover {
+    color: #111;
+    background: #eee;
+    border-radius: 4px;
+}
+
+.empty-state {
+    padding: 70px 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px dashed #ccc;
+    border-radius: 7px;
+}
+
+.empty-icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    color: #777;
+}
+
+.empty-state h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.empty-state p {
+    color: #999;
+    font-size: 13px;
+}
+
+.load-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.json-panel {
+    width: min(760px, 100%);
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+.panel-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.panel-header h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+.panel-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.panel-controls button {
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 4px;
+    background: #f0f0f0;
+    color: #555;
+    font-size: 20px;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.panel-controls button:hover {
+    background: #ddd;
+    color: #111;
+}
+
+.panel-description {
+    margin: 25px 0 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.json-panel label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#jsonInput {
+    width: 100%;
+    min-height: 330px;
+    padding: 16px;
+    resize: vertical;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+    background: #fafafa;
+    color: #222;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.6;
+
+    outline: none;
+}
+
+#jsonInput:focus {
+    border-color: #555;
+    background: #fff;
+}
+
+.json-actions {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 16px;
+}
+
+.json-actions button {
+    height: 44px;
+}
+
+.secondary-button {
+    background: #eee;
+    color: #222;
+}
+
+.secondary-button:hover {
+    background: #ddd;
+    transform: translateY(-2px);
+}
+
+.json-message {
+    min-height: 20px;
+    margin-top: 14px;
+
+    font-size: 13px;
+    color: #777;
+}
+
+
+.back-button {
+    position: fixed;
+    left: 25px;
+    bottom: 20px;
+    color: #777;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.back-button:hover {
+    color: #111;
+}
+
+
+@media (max-width: 750px) {
+
+    .navbar {
+        padding: 0 25px;
+    }
+
+    .container {
+        width: min(100% - 30px, 1100px);
+        padding: 45px 0;
+    }
+
+    .page-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-counter {
+        align-items: flex-start;
+    }
+
+    .add-task-card {
+        grid-template-columns: 1fr;
+    }
+
+    .add-button {
+        height: 48px;
+    }
+
+    .task-item {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .task-countdown {
+        margin-left: 38px;
+        text-align: left;
+    }
+
+    .load-page {
+        padding: 20px;
+    }
+
+    .json-panel {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+
+    .page-header h1 {
+        letter-spacing: -2px;
+    }
+
+    .task-item {
+        padding: 17px;
+    }
+
+    .delete-task {
+        margin-left: auto;
+    }
+
+    .json-actions {
+        flex-direction: column;
+    }
 }
