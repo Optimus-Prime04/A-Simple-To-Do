@@ -7,7 +7,7 @@ deadline after deadline
 At some point I thought, "Maybe I should stop trusting myself to
 remember everything" 😅
 
-So... Sentinel was born;)
+So... Sentinel was born;) (sentinel means watcher:)
 
 The idea is simple: add a task, set a deadline, and let the countdown
 remind you how much time you have left before things get serious. :)
@@ -15,8 +15,6 @@ remind you how much time you have left before things get serious. :)
 # AI Usage
 
 I used AI as part of building this project
-
-Project name: I got the name ideas with the help of ChatGPT.
 
 Hero video: The background hero video was generated using
 Gemini
