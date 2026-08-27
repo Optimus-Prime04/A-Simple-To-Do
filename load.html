@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentinel — JSON</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <main class="load-page">
+
+        <div class="json-panel">
+
+            <div class="panel-header">
+                <div>
+                    <p class="eyebrow">SENTINEL DATA</p>
+                    <h1>JSON Control</h1>
+                </div>
+
+                <div class="panel-controls">
+                    <button id="minimizeButton" type="button">−</button>
+                    <button id="closeButton" type="button">×</button>
+                </div>
+            </div>
+
+            <div id="panelContent">
+
+                <p class="panel-description">
+                    Import or export your Sentinel tasks using JSON.
+                </p>
+
+                <label for="jsonInput">JSON Data</label>
+
+                <textarea
+                    id="jsonInput"
+                    placeholder="Paste your Sentinel JSON here..."
+                    spellcheck="false"
+                ></textarea>
+
+                <div class="json-actions">
+
+                    <button
+                        id="importButton"
+                        class="primary-button"
+                        type="button"
+                    >
+                        Import
+                    </button>
+
+                    <button
+                        id="exportButton"
+                        class="secondary-button"
+                        type="button"
+                    >
+                        Export
+                    </button>
+
+                </div>
+
+                <p
+                    id="jsonMessage"
+                    class="json-message"
+                    aria-live="polite"
+                ></p>
+
+            </div>
+
+        </div>
+
+        <a href="task.html" class="back-button">
+            ← Back to Tasks
+        </a>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
