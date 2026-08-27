@@ -12,7 +12,7 @@ So... Sentinel was born;)
 The idea is simple: add a task, set a deadline, and let the countdown
 remind you how much time you have left before things get serious. :)
 
-AI Usage
+# AI Usage
 
 I used AI as part of building this project
 
@@ -26,7 +26,7 @@ and create the JSON-related parts of the project
 
 I still put the project together and tested the features myself.
 
-How to Use
+# How to Use
 
 Open https://a-simple-to-do.vercel.app/
 
@@ -37,7 +37,6 @@ Add a task
 Pick a date and time
 
 Click Add Task
-
 Watch the countdown ⏱️
 
 Finish the task and tick it off
@@ -50,26 +49,19 @@ No 6767😅 different dashboards
 
 Just me trying not to miss another deadline. ;)
 
-Why I Made It
+# Why I Made It
 
 Because I missed deadline after deadline. 💀
-
 Instead of complaining about it, I thought it would be more useful (and
 slightly funny) to build something that keeps staring at the deadline
 for me
-
 The goal of Sentinel is pretty simple:
-
 Never miss a deadline
-
 Because apparently, I needed software to tell me what I already knew:)
 
-Built With
+#Built With
 
 HTML
-
 CSS
-
 JavaScript
-
 JSON
