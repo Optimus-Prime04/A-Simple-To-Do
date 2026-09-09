@@ -1,25 +1,19 @@
+```css
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+    font-family: Arial;
+    background-color: #eeeeee;
 }
 
 /* Navigation */
 
 .navbar {
     background-color: white;
-    padding: 15px 30px;
-    border-bottom: 1px solid #ccc;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 15px;
 }
 
 .brand {
@@ -28,68 +22,46 @@ body {
 }
 
 .nav-links {
-    display: flex;
-    gap: 20px;
+    margin-top: 10px;
 }
 
 .nav-link {
     text-decoration: none;
-    color: #666;
-    font-size: 14px;
-}
-
-.nav-link:hover {
     color: black;
+    margin-right: 15px;
 }
 
-.nav-link.active {
-    color: black;
-    font-weight: bold;
-}
-
-/* Main container */
+/* Main */
 
 .container {
-    width: 90%;
-    max-width: 1000px;
+    width: 80%;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 /* Header */
 
 .page-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
 }
 
-.eyebrow {
-    font-size: 11px;
-    color: gray;
-    margin-bottom: 8px;
+.page-header h1 {
+    margin-top: 10px;
+    font-size: 35px;
 }
 
-.page-header h1 {
-    font-size: 38px;
+.eyebrow {
+    font-size: 12px;
+    color: gray;
 }
 
 .subtitle {
-    margin-top: 8px;
-    color: #777;
+    margin-top: 10px;
+    color: gray;
 }
 
 .task-counter {
-    text-align: center;
-    color: #777;
-}
-
-.task-counter span:first-child {
-    display: block;
-    font-size: 28px;
-    font-weight: bold;
-    color: black;
+    margin-top: 15px;
 }
 
 /* Add task */
@@ -97,320 +69,169 @@ body {
 .add-task-card {
     background-color: white;
     padding: 20px;
-    border: 1px solid #ccc;
-
-    display: flex;
-    gap: 15px;
-    align-items: end;
+    border: 1px solid gray;
 }
 
 .input-group {
-    flex: 1;
+    margin-bottom: 15px;
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 6px;
-    font-size: 12px;
+    margin-bottom: 5px;
 }
 
 .input-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #bbb;
-    border-radius: 4px;
+    width: 90%;
+    padding: 10px;
 }
 
-.input-group input:focus {
-    outline: none;
-    border-color: black;
-}
-
-/* Buttons */
+/* Button */
 
 .add-button {
     background-color: black;
     color: white;
-
+    padding: 10px;
     border: none;
-    padding: 12px 20px;
-
     cursor: pointer;
-    border-radius: 4px;
 }
 
 .add-button:hover {
-    background-color: #333;
+    background-color: gray;
 }
 
-.text-button {
-    border: none;
-    background: none;
-
-    color: gray;
-    cursor: pointer;
-}
-
-.text-button:hover {
-    color: black;
-}
-
-/* Task section */
+/* Tasks */
 
 .task-section {
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .section-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
-.section-header h2 {
-    font-size: 18px;
+.text-button {
+    margin-top: 10px;
+    padding: 5px;
+    cursor: pointer;
 }
 
-/* Task list */
+/* Task */
 
 .task-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    margin-top: 10px;
 }
 
 .task-item {
     background-color: white;
-    border: 1px solid #ddd;
-
+    border: 1px solid gray;
     padding: 15px;
-
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    margin-bottom: 10px;
 }
 
 .task-checkbox {
-    width: 18px;
-    height: 18px;
-
-    cursor: pointer;
-}
-
-.task-content {
-    flex: 1;
+    margin-right: 10px;
 }
 
 .task-title {
-    font-size: 15px;
     font-weight: bold;
 }
 
 .task-deadline {
+    margin-top: 5px;
     font-size: 12px;
     color: gray;
-    margin-top: 5px;
 }
 
 .task-countdown {
-    font-size: 13px;
-    color: #555;
-}
-
-.task-item.completed .task-title {
-    text-decoration: line-through;
-    color: gray;
-}
-
-.task-item.completed {
-    opacity: 0.6;
+    margin-top: 10px;
 }
 
 .delete-task {
-    background: none;
-    border: none;
-
-    font-size: 18px;
-    color: gray;
-
+    margin-top: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 
-.delete-task:hover {
-    color: red;
+/* Completed task */
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
 }
 
 /* Empty state */
 
 .empty-state {
     background-color: white;
-
-    border: 1px dashed #bbb;
-
+    border: 1px solid gray;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
 .empty-icon {
     font-size: 25px;
-    margin-bottom: 10px;
 }
 
 .empty-state h3 {
-    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .empty-state p {
+    margin-top: 10px;
     color: gray;
-    font-size: 13px;
 }
 
 /* JSON page */
 
 .load-page {
-    min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 20px;
+    padding: 30px;
 }
 
 .json-panel {
-    width: 700px;
-    max-width: 100%;
-
     background-color: white;
-
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     padding: 20px;
 }
 
 .panel-header {
-    display: flex;
-    justify-content: space-between;
-
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.panel-header h1 {
-    font-size: 20px;
+.panel-controls {
+    margin-top: 10px;
 }
 
 .panel-controls button {
-    border: none;
-    background: none;
-
-    font-size: 18px;
-    cursor: pointer;
-}
-
-#panelContent {
-    padding-top: 20px;
+    padding: 5px;
 }
 
 .panel-description {
-    margin-bottom: 15px;
-    color: gray;
-    font-size: 13px;
-}
-
-.json-panel label {
-    display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 #jsonInput {
-    width: 100%;
-    height: 280px;
-
+    width: 90%;
+    height: 200px;
     padding: 10px;
-
-    font-family: monospace;
-
-    border: 1px solid #bbb;
-
-    resize: vertical;
 }
 
 .json-actions {
-    margin-top: 15px;
-
-    display: flex;
-    gap: 10px;
+    margin-top: 10px;
 }
 
 .primary-button {
     background-color: black;
     color: white;
-
+    padding: 10px;
     border: none;
-
-    padding: 10px 18px;
-    cursor: pointer;
 }
 
 .secondary-button {
-    background-color: white;
-
-    border: 1px solid #bbb;
-
-    padding: 10px 18px;
-    cursor: pointer;
-}
-
-.primary-button:hover {
-    background-color: #333;
-}
-
-.secondary-button:hover {
-    background-color: #eee;
+    padding: 10px;
 }
 
 .json-message {
     margin-top: 10px;
-    color: gray;
 }
 
-/* Mobile */
-
-@media (max-width: 700px) {
-
-    .navbar {
-        padding: 15px;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    .page-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-    }
-
-    .add-task-card {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .input-group {
-        width: 100%;
-    }
-
-    .add-button {
-        width: 100%;
-    }
-
-    .task-item {
-        flex-wrap: wrap;
-    }
-
-    .task-countdown {
-        width: 100%;
-        margin-left: 30px;
-    }
-}
