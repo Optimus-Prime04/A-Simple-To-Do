@@ -27,9 +27,6 @@ That's basically it
 
 AI helped me in building the project
 
-Hero video: the background hero video was created using
-Gemini
-
 JSON: As I am still an absolute beginner with JSON, I used AI
 to help me work with it.
 
