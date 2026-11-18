@@ -1,7 +1,7 @@
 Sentinel is a simple deadline-oriented to-do list I have created after missing
 deadlines one after another
 
-That's why..Sentinel was created;) (sentinel is a watcher:)
+That's why..setinel was created
 
 The idea is easy – add a task, set a deadline and use the countdown to see
 how much time you have lft until it gets really serious🙃
@@ -15,7 +15,7 @@ Click Check Sentinel
 Add a task
 Pick a date and time
 Click Add Task
-Watch the countdown ⏱️
+Watch the countdown 
 Finish the task and tick it off
 Use the JSON page if you want to import or export your tasks
 That's basically it
@@ -30,7 +30,7 @@ I built the project by myself and tested all its features myself.
 Just my attempt to make sure I will not miss another deadline;)
 
 # Why I Created It
-Because I kept missing deadlines💀
+cause I kept missing deadlines
 Instead of complaining about it, I thought it would be more helpful (and
 slightly funny) to create a tool which keeps looking at the deadline
 instead of me
